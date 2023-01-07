@@ -180,8 +180,6 @@ def initLogsFile(path):
     pass
 
 def trainAndEvaluate(modelInfo, dsInfo, trainDataset, valDatasets, num_labels):
-  model = modelInfo.load_model(num_labels)
-
   logsPath = modelInfo.get_logs_path(dsInfo.name)
   initLogsFile(logsPath)
 
@@ -191,6 +189,7 @@ def trainAndEvaluate(modelInfo, dsInfo, trainDataset, valDatasets, num_labels):
   for lr in dsInfo.lr:
     for batch_size in dsInfo.batch_size:
       for _ in range(dsInfo.runs):
+        model = modelInfo.load_model(num_labels)
 
         trainingArguments = ts.TrainingArguments(
             "output/",
