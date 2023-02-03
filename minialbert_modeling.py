@@ -3,9 +3,6 @@ import torch.nn as nn
 from torch.functional import F
 
 import transformers as ts
-import datasets as ds
-from datasets import Dataset
-
 from transformers.modeling_outputs import *
 
 import numpy as np
