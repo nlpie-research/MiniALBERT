@@ -7,10 +7,11 @@ Pre-trained Language Models (LMs) have become an integral part of Natural Langua
 
 ## Citation
 ```bibtex
-@article{nouriborji2022minialbert,
+@inproceedings{nouriborji2023minialbert,
   title={MiniALBERT: Model Distillation via Parameter-Efficient Recursive Transformers},
   author={Nouriborji, Mohammadmahdi and Rohanian, Omid and Kouchaki, Samaneh and Clifton, David A},
-  journal={arXiv preprint arXiv:2210.06425},
-  year={2022}
+  booktitle={Proceedings of the 17th Conference of the European Chapter of the Association for Computational Linguistics},
+  pages={1161--1173},
+  year={2023}
 }
 ```
